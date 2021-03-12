@@ -66,10 +66,10 @@
 	}
 	
 	//delete items
-	if (request.getParameter("ItemID") != null) 
+	if (request.getParameter("itemID") != null) 
  	{ 
 	 Item itemObj = new Item(); 
-	 String stsMsg = itemObj.deleteItem(request.getParameter("ItemID")); 
+	 String stsMsg = itemObj.deleteItem(request.getParameter("itemID")); 
 	 session.setAttribute("statusMsg", stsMsg); 
 	} 
 	
